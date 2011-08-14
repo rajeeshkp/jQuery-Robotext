@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en-EN" />
+    <meta name="title" content="jQuery Robotext" />
+    <meta name="description" content="jQuery Robotext" />
+    <meta name="keywords" content="jQuery Robotext" />
+    
+    <title>jQuery Robotext</title>
+	
+	<style type="text/css">
+	* {
+		margin:0;padding:0;
+	}
+	p {
+		padding-bottom:10px;
+	}
+	p.myTexts {
+		color:#f00;
+		padding:0;
+	}
+	</style>
+	
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.min.js"></script>
+	<script type="text/javascript" src="jquery.robotext.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$('#myFirstText').robotext();
+		$('#mySecondText').robotext({cursor:'false'});
+		$('#myThirdText').robotext({flashfrequency:80});
+        $('.myTexts').robotext({speed:10}).css('color','#000');
+    });
+	</script>
+	
+</head>
+<body>
+	<strong>Default:</strong><br />
+	<p id="myFirstText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<strong>No cursor flashing:</strong><br />
+    <p id="mySecondText"><a href="#">Lorem</a> ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<strong>Faster cursor flashing:</strong><br />
+	<p id="myThirdText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	<strong>Faster text:</strong><br />
+    <p class="myTexts">Praesent lacinia vulputate lorem, ut hendrerit tellus eleifend vulputate.</p>
+    <p class="myTexts">Praesent lacinia vulputate lorem, ut hendrerit tellus eleifend vulputate.</p>
+</body>
+</html>
