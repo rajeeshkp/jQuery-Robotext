@@ -1,0 +1,8 @@
+jQuery Robotext is text-effect plugin that rewrites your text letter by letter, optionally with a cursor at end.
+
+Available options and their default values:
+- cursor: true
+- flashfrequency : 200
+- speed : 40
+
+For usage, please check out the demo.html.
